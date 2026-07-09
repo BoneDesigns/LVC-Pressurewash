@@ -1,0 +1,15 @@
+# Raw source materials in project root — not needed for the deployed site.
+# (The web-ready versions live in site/assets/.)
+/*.mov
+/*.MOV
+/*.mp4
+/*.png
+/*.jpeg
+/*.jpg
+/*.txt
+/*.url
+
+# Tooling / OS
+.claude/
+.DS_Store
+Thumbs.db
