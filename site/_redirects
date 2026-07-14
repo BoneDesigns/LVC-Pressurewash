@@ -1,0 +1,31 @@
+# Netlify subdomain → canonical www domain.
+# Known legacy/duplicate paths go straight to their final URL (no chains);
+# the catch-all handles everything else path-for-path.
+https://lvcpressurewash.netlify.app/services-4          https://www.lvcpressurewash.com/services        301!
+https://lvcpressurewash.netlify.app/about-us            https://www.lvcpressurewash.com/about           301!
+https://lvcpressurewash.netlify.app/industries-served   https://www.lvcpressurewash.com/industries      301!
+https://lvcpressurewash.netlify.app/contact-quote       https://www.lvcpressurewash.com/contact         301!
+https://lvcpressurewash.netlify.app/index.html          https://www.lvcpressurewash.com/                301!
+https://lvcpressurewash.netlify.app/services.html       https://www.lvcpressurewash.com/services        301!
+https://lvcpressurewash.netlify.app/about.html          https://www.lvcpressurewash.com/about           301!
+https://lvcpressurewash.netlify.app/contact.html        https://www.lvcpressurewash.com/contact         301!
+https://lvcpressurewash.netlify.app/faq.html            https://www.lvcpressurewash.com/faq             301!
+https://lvcpressurewash.netlify.app/industries.html     https://www.lvcpressurewash.com/industries      301!
+https://lvcpressurewash.netlify.app/service-areas.html  https://www.lvcpressurewash.com/service-areas   301!
+https://lvcpressurewash.netlify.app/*                   https://www.lvcpressurewash.com/:splat          301!
+
+# Old Wix URLs → new pages
+/services-4          /services        301
+/about-us            /about           301
+/industries-served   /industries      301
+/contact-quote       /contact         301
+
+# .html URLs → extensionless canonical URLs
+# (forced with ! because the physical files exist and would otherwise shadow the rules)
+/index.html          /                301!
+/services.html       /services        301!
+/about.html          /about           301!
+/contact.html        /contact         301!
+/faq.html            /faq             301!
+/industries.html     /industries      301!
+/service-areas.html  /service-areas   301!
