@@ -490,6 +490,12 @@ body.menu-open .mobile-menu{ opacity:1; transform:none; pointer-events:auto; }
 .footer-contact svg{ width:16px; height:16px; color:var(--bone); }
 .footer-bottom{ margin-top:clamp(2rem,4vw,3rem); padding-top:1.6rem; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem; align-items:center; }
 .footer-bottom p{ margin:0; font-family:var(--f-mono); font-size:.72rem; letter-spacing:.06em; color:var(--steel-2); }
+.footer-bottom a{ color:var(--fog); transition:color .2s; }
+.footer-bottom a:hover{ color:var(--volt-glow); }
+/* ITEK credit, same as the Belfry footer */
+.itek-credit { display:inline-flex; align-items:center; gap:.6ch; min-height:44px; }
+.itek-credit img { height:22px; width:auto; opacity:.8; transition:opacity .2s; }
+.itek-credit:hover img, .itek-credit:focus-visible img { opacity:1; }
 
 /* sticky mobile call bar */
 .mobile-bar{ position:fixed; left:0; right:0; bottom:0; z-index:50; display:none; gap:1px; background:var(--line-2); border-top:1px solid var(--line-2); }
